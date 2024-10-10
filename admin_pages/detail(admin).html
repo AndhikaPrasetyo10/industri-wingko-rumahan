@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title href="../admin_pages/admin.html">Fresh.co</title>
+ <!-- fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap"rel="stylesheet"/>
+
+ <!-- feather icon -->
+ <script src="https://unpkg.com/feather-icons"></script>
+
+ <!-- style -->
+ <link rel="stylesheet" href="../css/style.css"/>
+ <link rel="stylesheet" href="../css/infoPesanan.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+ <link rel="stylesheet" href="../css/detailPesanan(admin).css">
+</head>
+<body>
+  <nav class="navbar">
+     <a href="../admin_pages/daftarPesanan.html" class="navbar-logo">Fresh.<span>co</span></a>
+     <!-- tengah -->
+     <div class="navbar-nav">
+      <a href="../admin_pages/admin.html">summary</a>
+      <a href="../admin_pages/daftarPesanan.html">Daftar Pesanan</a>
+      <a href="../backend/logout.php">Logout</a>
+        </div>
+        <!-- kanan -->
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+ <section name="Table informasi pesanan" class="daftarInfo">
+ <div class="container">
+ <table id="data-table" class="table-detail">
+    <thead class="table-header">
+     <tr>
+      <!-- <th>ID Pemesanan</th> -->
+      <th>ID Produk</th>
+      <th>Nama Menu</th>
+      <th>Jumlah</th>
+      <th>Harga</th>
+     </tr>
+    </thead>
+        <tbody id="detail(admin)-table-body" class="table-content">
+
+        </tbody>
+ </table>
+ <form action="../backend/pesananSelesai.php" method="post">
+   <a href="../admin_pages/daftarPesanan.html" class="selesai" id="pesananSelesai" name="pesanan-selesai">Pesanan Selesai</a>
+ </form>
+
+ <form action="../backend/hapusPesanan.php" method="post">
+  <a href="../admin_pages/daftarPesanan.html" id="hapusPesanan" class="hapus" name="hapus-pesanan">Hapus Pesanan</a>
+ </form>
+
+</div>
+ </section>
+
+
+ <!-- feather icon -->
+ <script> feather.replace();</script>
+
+ <!-- Javascript -->
+ <script src="../js/script.js"></script>
+ <script src="../js/detailPesanan(admin).js"></script>
+ <script src="../js/hapusPesanan.js"></script>
+ <script src="../js/pesananSelesai.js"></script>
+</body>
+</html>

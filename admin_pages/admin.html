@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+[<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh.co</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap" rel="stylesheet"/>
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- kiri -->
+    <nav class="navbar">
+      <a href="#summary" class="navbar-logo">Fresh.<span>co</span></a>
+      <!-- tengah -->
+      <div class="navbar-nav">
+        <a href="./admin.html">summary</a>
+        <a href="./daftarPesanan.html">Daftar Pesanan</a>
+        <a href="../backend/logout.php">Logout</a>
+      </div>
+      <!-- kanan -->
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Summary Section -->
+    <section class = "summary" id="summary-section" >
+      <div class="container">
+        <h1>Summary</h1>
+        <form method="post" action="../backend/summary.php">
+          <td><input type="date" id ="summaryDate" name="tanggal"></td>
+          <td><button class="summaryButton" name="submit" value="submit">submit </button></td>
+
+        <!-- keuangan -->
+        <div class="boxes">
+        <div class=" box box_1">
+          <input type="hidden" name="order" id="orderBox" >
+          <i data-feather="shopping-cart"></i>
+          <span class="text">Total Pesanan Hari ini</span>
+          <span class="number" id="orderBox_number">0</span>
+        </div>
+        <div class=" box box_2">
+          <i data-feather="dollar-sign"></i>
+          <span class="text">Income Hari ini</span>
+          <span class="number" id="dailyIncome_number">Rp.0</span>
+        </div>
+        <div class="box box_3">
+          <i data-feather="dollar-sign"></i>
+          <span class="text">Income Bulanan</span>
+          <span class="number" id="monthlyIncome_number">Rp.0</span>
+        </div>
+        <div class="box box_4">
+          <i data-feather="chevron-down"></i>
+          <span class="text">Pengeluaran Harian</span>
+          <span class="number" id="pengeluaran_number">Rp.0</span>
+        </div>
+        <div class="box box_5">
+          <i data-feather="chevrons-down"></i>
+          <span class="text">Pengeluaran Bulanan</span>
+          <span class="number" id="pengeluaranBulanan_number">Rp.0</span>
+        </div>
+    </div>
+    <!-- Table Summary -->
+          <table class="table">
+           <tr>
+            <td>Wingko Keju</td>
+            <td id="wingkoKejuValue"><input type="text" name="wingkoKeju" readonly value="0"></td>
+            <td>Wingko Wijen</td>
+            <td id="wingkoWijenValue"><input type="text" name="wingkoWijen" readonly value="0"></td>
+            <td><button class = "tambahStockButton">Tambah Stock</button></td>
+           </tr>
+          </table>
+        </form>
+
+        <table id="admin-table" class="table">
+         <thead class="table-header">
+          <tr>
+          <th>Bahan</th>
+          <th>Komposisi Wingko Keju</th>
+          <th>Komposisi Wingko Wijen</th>
+          <th>Komposisi Total</th>
+          <th>Ketersediaan</th>
+          <th>Selisih</th>
+    </tr>
+        </thead>
+            <tbody id="summary-content" class="table-content">
+
+
+            </tbody>
+        </table>
+    </div>
+    <!-- tambah stock layer -->
+     <div class="tambahStock" id="tambahStockID">
+      <div class="tambahStock-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="tambahStock-content">
+          <form action="../backend/tambahStock.php" method="post">
+            <h3>Tambah Stock Kelapa</h3>
+            <input type="text" name="kelapa" id="tambahKelapa" placeholder="Dalam Pcs" value="0" onfocus="if (this.value=='0') this.value='';" onblur = "if (this.value == '') this.value='0';">
+            <label for="tambahKelapa">Pcs</label>
+
+            <h3>Tambah Stock Telor</h3>
+            <input type="text" name="telor" id="tambahTelor" placeholder="Dalam Gram atau Pcs" value="0" onfocus="if (this.value=='0') this.value='';" onblur = "if (this.value == '') this.value='0';">
+            <label for="tambahTelor">Pcs</label>
+
+            <h3>Tambah Stock Tepung Ketan</h3>
+            <input type="text" name="tepungKetan" id="tambahTepungKetan" placeholder="Dalam Gram atau Pcs" value="0" onfocus="if (this.value=='0') this.value='';" onblur = "if (this.value == '') this.value='0';">
+            <label for="tambahTepungKetan">Gram</label>
+
+            <h3>Tambah Stock Margarin</h3>
+            <input type="text" name="margarin" id="tambahMargarin" placeholder="Dalam Gram atau Pcs" value="0" onfocus="if (this.value=='0') this.value='';" onblur = "if (this.value == '') this.value='0';">
+            <label for="tambahMargarin">Gram</label>
+
+            <h3>Tambah Stock Gula Pasir</h3>
+            <input type="text" name="gulaPasir" id="tambahGula" placeholder="Dalam Gram atau Pcs" value="0" onfocus="if (this.value=='0') this.value='';" onblur = "if (this.value == '') this.value='0';">
+            <label for="tambahGula">Gram</label>
+
+            <h3>Tambah Stock Susu Kental</h3>
+            <input type="text" name="susuKental" id="tambahSusu" placeholder="Dalam Gram atau Pcs" value="0" onfocus="if (this.value=='0') this.value='';" onblur = "if (this.value == '') this.value='0';">
+            <label for="tambahSusu">Pcs</label>
+
+            <h3>Tambah Stock Keju</h3>
+            <input type="text" name="keju" id="tambahKeju" placeholder="Dalam Gram atau Pcs" value="0" onfocus="if (this.value=='0') this.value='';" onblur = "if (this.value == '') this.value='0';">
+            <label for="tambahKeju">Gram</label>
+
+            <h3>Tambah Stock Wijen</h3>
+            <input type="text" name="wijen" id="tambahWijen" placeholder="Dalam Gram atau Pcs" value="0" onfocus="if (this.value=='0') this.value='';" onblur = "if (this.value == '') this.value='0';">
+            <label for="tambahWijen">Gram</label>
+
+            <h3>Tambah Stock Kemasan</h3>
+            <input type="text" name="kemasan" id="tambahKemasan" placeholder="Dalam Gram atau Pcs" value="0" onfocus="if (this.value=='0') this.value='';" onblur = "if (this.value == '') this.value='0';">
+            <label for="tambahKemasan">Pcs</label>
+
+            <h3>Total Pengeluaran Hari Ini</h3>
+            <label for="inputPengeluaran">Rp.</label>
+            <input type="text" name = "pengeluaran" id="inputPengeluaran" placeholder="contoh : 100000" value="0" onfocus="if (this.value=='0') this.value='';" onblur = "if (this.value == '') this.value='0';">
+
+            <button name="submit" value="submit" class="submitStock">submit</button>
+          </form>
+       </div>
+      </div>
+    </div>
+
+    </section>
+
+    <!-- summary section end -->
+
+
+
+
+    <!-- feather icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="../js/script.js"></script>
+    <script src="../js/summary.js"></script>
+  </body>
+</html>

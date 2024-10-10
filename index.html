@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh.co</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- kiri -->
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo">Fresh.<span>co</span></a>
+      <!-- tengah -->
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang kami</a>
+        <a href="#menu">Produk</a>
+        <a href="./infoPesanan.html">informasi Pesanan</a>
+        <a href="./login.html">Login</a>
+        <!-- <a href="#contact">kontak</a> -->
+      </div>
+      <!-- kanan -->
+      <div class="navbar-extra">
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <span class="quantity">0</span>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+      <!-- shopping cart list -->
+
+      <!-- <div class="list"> -->
+
+      </div>
+      <div class="shopping-cart">
+        <div class="list-item">
+
+        </div>
+
+        <div class="checkOutButton">
+          <div class="total">0</div>
+          <a href="./buatPesanan.html"class="checkout">Buat Pesanan</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- main section  -->
+    <section class="main" id="home">
+      <main class="content">
+        <h1>Enjoy Your Tea With Fresh.<span>co</span></h1>
+        <p>Local Brand From Kuningan West Java</p>
+        <a href="#menu" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <!-- main section end  -->
+
+    <!-- about section -->
+    <section id="about" class="about">
+      <h3>Welcome To</h3>
+      <p></p>
+      <h2>Fresh.<span>co</span></h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/Logo Fresh.co.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h1>Get To Know About Us</h1>
+          <p>
+            Fresh.co adalah UMKM asal Kuningan Jawa Barat yang berdedikasi
+            untuk menyajikan produk-produk segar dan berkualitas. Sebagai Produk
+            yang terinspirasi oleh nilai-nilai tradisional dan produk lokal
+          </p>
+          <p>
+            Berdiri sejak awal pandemi 2020 dan kami memiliki tujuan untuk
+            mendorong kemajuan usaha UMKM asal Kuningan.
+            Setiap pembelian dari Fresh.co adalah dukungan bagi perkembangan dan keberlanjutan usaha
+            kecil kami
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+    <!-- menu section -->
+    <section id="menu" class="menu">
+      <h2>Produk <span> Kami</span></h2>
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="img/menu/Wingko Keju.jpg"
+            alt="wingko keju"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Wingko Keju</h3>
+          <div class="menu-price">Rp40.000</div>
+          <div class="menu-icons">
+            <button class="masukan-Button"><span>Masukan Keranjang Belanja</span>
+              <i data-feather="shopping-cart"></i>
+            </button>
+            <!-- <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a> -->
+          </div>
+        </div>
+        <div class="menu-card">
+          <img
+            src="img/menu/Wingko Wijen.jpg"
+            alt="wingko wijen"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">Wingko Wijen</h3>
+          <div class="menu-price">Rp40.000</div>
+          <div class="menu-icons">
+            <button class="masukan-Button"><span>Masukan Keranjang Belanja</span>
+              <i data-feather="shopping-cart"></i>
+            </button>
+            <!-- <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu section end -->
+
+    <!-- rincian produk -->
+    <!-- <div class="rincian" id="item-detail-rincian">
+      <div class="rincian-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="rincian-content">
+          <img src="img/menu/Wingko Keju.jpg" alt="Product 1" />
+          <div class="product-content">
+            <h3>Product 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates commodi consectetur repudiandae voluptatibus quae
+              deserunt, iusto error, aperiam quo beatae eius facere sapiente
+              optio ducimus?
+            </p>
+            <h3>Rp40.000</h3>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i
+              ><span>Masukan Ke Keranjang</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- rincian produk end -->
+
+    <!-- feather icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/shoppingCart.js"></script>
+  </body>
+</html>

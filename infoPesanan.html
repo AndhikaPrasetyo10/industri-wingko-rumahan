@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title href="./index.html">Fresh.co</title>
+ <!-- fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap"rel="stylesheet"/>
+
+ <!-- feather icon -->
+ <script src="https://unpkg.com/feather-icons"></script>
+
+ <!-- style -->
+ <link rel="stylesheet" href="css/style.css"/>
+ <link rel="stylesheet" href="css/infoPesanan.css">
+ <!--link style table  -->
+<body>
+    <nav class="navbar">
+        <a href="./index.html" class="navbar-logo">Fresh.<span>co</span></a>
+        <!-- tengah -->
+        <div class="navbar-nav">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#about">Tentang kami</a>
+          <a href="./index.html#menu">Produk</a>
+          <a href="./infoPesanan.html">informasi Pesanan</a>
+          <a href="./login.html">Login</a>
+        </div>
+        <!-- kanan -->
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+ <section name="Table informasi pesanan" class="daftarInfo">
+ <div class="container">
+    <table id="data-table" class="table">
+     <thead class="table-header">
+        <tr>
+      <th>Tanggal Pesanan</th>
+      <th>Pemilik</th>
+      <th>Total Harga</th>
+      <th>Rincian</th>
+      <th>Status</th>
+</tr>
+    </thead>
+        <tbody id="info-table-body" class="table-content">
+          <td></td>
+        </tbody>
+    </table>
+</div>
+ </section>
+
+
+ <!-- feather icon -->
+ <script> feather.replace();</script>
+
+ <!-- Javascript -->
+ <script src="js/script.js"></script>
+ <script src="js/infoPesanan.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+html rincian box yang fresh co web yang dihapus
+
+<!-- rincian produk -->
+    <div class="rincian" id="item-detail-rincian">
+      <div class="rincian-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="rincian-content">
+          <img src="img/menu/Wingko Keju.jpg" alt="Product 1" />
+          <div class="product-content">
+            <h3>Product 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates commodi consectetur repudiandae voluptatibus quae
+              deserunt, iusto error, aperiam quo beatae eius facere sapiente
+              optio ducimus?
+            </p>
+            <h3>Rp40.000</h3>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i
+              ><span>Masukan Ke Keranjang</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="rincian-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="rincian-content">
+          <img src="img/menu/Wingko Wijen.jpg" alt="Product 2" />
+          <div class="product-content">
+            <h3>Product 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates commodi consectetur repudiandae voluptatibus quae
+              deserunt, iusto error, aperiam quo beatae eius facere sapiente
+              optio ducimus?
+            </p>
+            <h3>Rp40.000</h3>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i
+              ><span>Masukan Ke Keranjang</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- rincian produk end -->
+
+
+CSS STYLE NYA
+
+
+/* Rincian produk */
+
+/* detail produk */
+/* .rincian {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+} */
+
+/* rincian box animation */
+@keyframes animateRincian {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* container rincian produk 1
+.rincian .rincian-container {
+  position: relative;
+  background-color: #fefefe;
+  color: var(--bg);
+  margin: 15% auto;
+  padding: 1.2rem;
+  border: 1px solid #666;
+  border-radius: 8px;
+  width: 80%;
+  animation: animateRincian 0.9s;
+}
+
+.rincian-container .close-icon {
+  position: absolute;
+  right: 1rem;
+}
+
+.rincian-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.rincian .rincian-content img {
+  width: 20%;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rincian-content p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.rincian-content a {
+  display: flex;
+  gap: 1rem;
+  width: 20rem;
+  background-color: var(--primary);
+  color: #fff;
+  margin-top: 2.4rem;
+  padding: 1rem 1.6rem;
+  border-radius: 8px;
+} */
+
+/* rincian box end */
+
+
+JS SCRIPT 
+
+// Rincian Box
+// const itemDetailRincian = document.querySelector("#item-detail-rincian");
+// const itemDetailButtons = document.querySelectorAll(".item-detail-button");
+
+// itemDetailButtons.forEach((btn) => {
+//   btn.onclick = (e) => {
+//     itemDetailRincian.style.display = "flex";
+//     e.preventDefault();
+//   };
+// });
+
+// // klik tombol close
+// document.querySelector(".rincian .close-icon").onclick = (e) => {
+//   itemDetailRincian.style.display = "none";
+//   e.preventDefault();
+// };

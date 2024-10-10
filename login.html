@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title href="./index.html">Fresh.co</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/buatPesanan.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- kiri -->
+    <nav class="navbar">
+      <a href="./index.html" class="navbar-logo">Fresh.<span>co</span></a>
+      <!-- tengah -->
+      <div class="navbar-nav">
+        <a href="./index.html">Home</a>
+        <a href="./index.html#about">Tentang kami</a>
+        <a href="./index.html#menu">Produk</a>
+        <a href="./infoPesanan.html">informasi Pesanan</a>
+        <a href="./login.html">Login</a>
+        </div>
+        <!-- kanan -->
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+ <section class="buatPesanan" id="">
+    <div class="container">
+     <div class="card-container">
+       <!-- <div class="left">
+        <div class="left-container">
+          <h2>Login</h2>
+          <p>Login Sebagai Admin.</p><br>
+        </div>
+       </div> -->
+        <div class="right">
+         <div class="right-container">
+             <form method="post" action="./backend/login.php">
+              <div class="formLogin">
+              <h1>Login Sebagai Admin</h1>
+           <input type="text" name="name" placeholder="Username (123)">
+           <input type="text" name="password" placeholder="Password (123)">
+        </div>
+
+      <button type="submit" name="login" id = "loginButton">Login</button>
+  </form>
+   </div>
+    </div>
+  </div>
+  </div>
+ </section>
+
+
+
+  <!-- feather icon -->
+  <script> feather.replace();</script>
+
+  <!-- Javascript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

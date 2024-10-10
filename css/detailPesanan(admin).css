@@ -1,0 +1,31 @@
+.container{
+    background-color: white;
+    position: relative;
+}
+
+
+.hapus{
+    position: absolute;
+    background-color: #f33a3a;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    right: 0%;
+}
+
+.selesai{
+    position: absolute;
+    background-color: #1db851;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    left: 0%;
+}
+
+.selesai:hover{
+    background-color: #2372d9;
+}

@@ -1,0 +1,104 @@
+.container{
+    color: var(--bg2);
+    background-color: whitesmoke;
+    width: 90%;
+    text-align: center;
+}
+.daftarInfo{
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+thead{
+color: whitesmoke;
+background-color: var(--bg);
+}
+
+.container table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative
+}
+
+
+table td,table th {
+    padding-left: 8px;
+    text-align: left;
+}
+
+table thead tr {
+    height: 60px;
+    background: var(--bg2);
+}
+
+table tbody tr {
+    height: 50px;
+}
+
+table tbody tr {
+    border: 0
+}
+
+
+.table100-head th {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset
+}
+
+
+
+tbody tr {
+    font-size: 15px;
+    color: var(--bg2);
+    line-height: 1.2;
+    font-weight: unset
+}
+
+tbody tr:hover {
+    color: #555;
+    background-color: #f5f5f5;
+    cursor: pointer
+}
+
+
+.detailButton{
+    background-color: #1db851;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    /* border: 0.1px solid var(--bg2); */
+    cursor: pointer;
+}
+
+.detailButton:hover{
+    background-color: var(--primary);
+    color: var(--bg);
+}
+
+.statusButton{
+    background-color: rgb(208, 59, 59);
+    /* color: white; */
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    /* border: 0.1px solid var(--bg2); */
+    cursor: pointer;
+}
+
+@media (max-width : 768px) {
+.container{
+    font-size: 14px;
+
+}
+}
+
+
+
